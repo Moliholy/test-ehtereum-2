@@ -74,3 +74,10 @@ Veamos que el dueño es efectivamente la dirección con la que hemos operado:
 > eth.coinbase
 "0x5531d7617f2ea28be9de4e8fb74702b8a8259f22"
 ```
+
+Por último, vamos a obtener el resolver:
+
+```
+> ens.resolver(namehash("josemolina.test"))
+"0x0000000000000000000000000000000000000000"
+```
