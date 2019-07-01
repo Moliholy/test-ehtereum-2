@@ -81,3 +81,20 @@ Por último, vamos a obtener el resolver:
 > ens.resolver(namehash("josemolina.test"))
 "0x0000000000000000000000000000000000000000"
 ```
+
+Aún no hemos asignado ningún resolver, por lo que aparece la dirección nula. Vamos pues
+a asignarle un resolver:
+
+```
+> ens.setResolver(namehash("josemolina.test"), publicResolver.address, {from: eth.coinbase})
+"0x72998bd3f64683d8e142228166db5168e799fdf59995ce13acd2c1f6bfdd9b60"
+```
+
+Vamos nuevamente a comprobar que el resolver ha sido correctamente asignado:
+
+```
+> ens.resolver(namehash("josemolina.test"))
+"0x5d20cf83cb385e06d2f2a892f9322cd4933eacdc"
+> publicResolver.address
+"0x5d20cf83cb385e06d2f2a892f9322cd4933eacdc"
+```
