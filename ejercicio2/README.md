@@ -33,7 +33,6 @@ En primer lugar procedemos a instanciar el proyecto de webpack:
 $ mkdir webpack
 $ cd webpack
 $ truffle unbox webpack
-  ``
   
 ✔ Preparing to download
 ✔ Downloading
@@ -235,10 +234,10 @@ $ npm run build
 
 Hash: 7b1e581738a1bf676140
 Version: webpack 4.28.1
-Time: 1308ms
-Built at: 07/01/2019 7:03:35 PM
+Time: 1474ms
+Built at: 07/02/2019 12:13:46 AM
      Asset       Size  Chunks             Chunk Names
-index.html  879 bytes          [emitted]
+index.html  863 bytes          [emitted]
   index.js   2.02 MiB    main  [emitted]  main
 Entrypoint main = index.js
 [0] util (ignored) 15 bytes {main} [built]
@@ -279,15 +278,15 @@ Una vez arrancado podemos añadir la carpeta de ``dist/`` previamente creada a I
 ```
 $ cd app
 $ ipfs add -r dist/
-added QmcrWVNs2QqVEX8pUUVWafxoVv5AHNAYJ11XQcnGBPQz2K dist/index.html
+added QmPqGFgcig9Pm9SCEgi758xBaMm5F3qK1ZhFvdwPV5yuu8 dist/index.html
 added QmWwrUva2Ur3LgRNfxBEvDjUTchhv8Vw98QvqVZuVANwXt dist/index.js
-added QmaWNyVhMud9XcMbesBsJvzoFZG9zMHqkXzuxV4uG7Ux6B dist
- 2.02 MiB / 2.02 MiB [===============================================================================] 100.00%
+added QmTSbQ6HRHxg88tfLEDqU3DzQqtSXxrFMTN73776SLw9RV dist
+ 2.02 MiB / 2.02 MiB [==========================================================] 100.00%
 ```
 
 Una vez finalizado el proceso podemos ver que el hash que contiene todos los archivos es
-``QmaWNyVhMud9XcMbesBsJvzoFZG9zMHqkXzuxV4uG7Ux6B``, y por tanto podemos acceder a 
-http://127.0.0.1:8080/ipfs/QmaWNyVhMud9XcMbesBsJvzoFZG9zMHqkXzuxV4uG7Ux6B/ e interactuar con la aplicación usando directamente
+``QmTSbQ6HRHxg88tfLEDqU3DzQqtSXxrFMTN73776SLw9RV``, y por tanto podemos acceder a 
+http://127.0.0.1:8080/ipfs/QmTSbQ6HRHxg88tfLEDqU3DzQqtSXxrFMTN73776SLw9RV/ e interactuar con la aplicación usando directamente
 la red Rinkeby.
 
 
