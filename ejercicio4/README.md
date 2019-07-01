@@ -76,21 +76,21 @@ Ahora vamos a subir a Swarm la app del ejercicio 2:
 
 ```
 $ swarm --defaultpath dist/index.html --recursive up dist
-230fd89728a48121de23dad4d57ebdc8939b9a2b6523af1a973b97a2f2039a40
+a62ccd170ac63eaad0619cfd12d8ca4af0ae094dc9e7aeaee6a4cd00c0e3a8c3
 ```
 
 Y seguidamente comprobamos que funciona:
 
 ![img 1](screenshots/img1.png)
 
-También es posible acceder a través del [navegador](http://localhost:8500/bzz:/230fd89728a48121de23dad4d57ebdc8939b9a2b6523af1a973b97a2f2039a40/).
+También es posible acceder a través del [navegador](http://localhost:8500/bzz:/a62ccd170ac63eaad0619cfd12d8ca4af0ae094dc9e7aeaee6a4cd00c0e3a8c3/).
 
 
 Vamos a continuación a enlazar el hash con nuestro dominio ``josemolina.test`` en la red Rinkeby:
 
 ```
-> publicResolver.setContent(namehash("josemolina.test"), "0x230fd89728a48121de23dad4d57ebdc8939b9a2b6523af1a973b97a2f2039a40", {from: eth.coinbase})
-"0x203df874cf544b880ea8cde5601b7d057b8fe0fbb4acb8b9a0bcc3184b781c77"
+> publicResolver.setContent(namehash("josemolina.test"), "0xa62ccd170ac63eaad0619cfd12d8ca4af0ae094dc9e7aeaee6a4cd00c0e3a8c3", {from: eth.coinbase})
+"0x8f83518687fb9670b2dce77c99686539a1b7dd65877f430b295db830b53269c8"
 ```
 
 
